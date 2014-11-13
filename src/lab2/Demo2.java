@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package lab1;
+package lab2;
 
 import common.Song;
 import java.util.HashSet;
@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * @author sendres1
  */
-public class Demo1 {
+public class Demo2 {
     public static void main(String[] args) {
         
         Song s1 = new Song("First", 1, "Fast", "none", "none");
@@ -23,23 +23,22 @@ public class Demo1 {
         Song s4 = new Song("Fourth", 1, "Fast", "none", "none");
         
          //(String name, int notes, String tempo, String words, String instrumentals)
-        
-          Set set = new HashSet();
-        set.add(s1);
-        set.add(s2);
-        set.add(s3);
-        set.add(s4);
+       //   Set<String> mySports = new HashSet<String>();
+          HashMap<song> = new HashMap<song>();
+        map.add(s1);
+        map.add(s2);
+        map.add(s3);
+        map.add(s4);
         
         // same as below
-//        set.stream().forEach((song) -> {
+//        map.stream().forEach((song) -> {
 //            System.out.println(song);
 //        });
       
-        for(Object song : set) {
+        for(Object song : map) {
             System.out.println(song);
         }
         
-        System.out.println("song is :  " + s1.toString());
         
     }
     
