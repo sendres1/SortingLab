@@ -4,20 +4,16 @@
  * and open the template in the editor.
  */
 
-package lab4;
+package lab5;
 
 import common.Song;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.TreeSet;
-import lab3.*;
 
 /**
  *
  * @author sendres1
  */
-public class Demo4 {
+public class Demo5 {
     public static void main(String[] args) {
         
         Song s1 = new Song("First", 1, "Fast", "none", "none");
@@ -26,12 +22,12 @@ public class Demo4 {
         Song s4 = new Song("Fourth", 1, "Fast", "none", "none");
         
          //(String name, int notes, String tempo, String words, String instrumentals)
-          TreeSet<Song> treeSet1 = new TreeSet<Song>();
+          List<Song> list = new List<Song>();
        //   Set treeSet1 = new HashSet();
           
        //   note use collections.sort
           
-        treeSet1.add(s1);
+        list.
         treeSet1.add(s2);
         treeSet1.add(s3);
         treeSet1.add(s4);
