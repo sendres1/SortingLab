@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package lab2;
+package lab3;
 
 import common.Song;
 import java.util.HashMap;
@@ -15,7 +15,7 @@ import java.util.Set;
  *
  * @author sendres1
  */
-public class Demo2 {
+public class Demo3 {
     public static void main(String[] args) {
         
         Song s1 = new Song("First", 1, "Fast", "none", "none");
@@ -24,22 +24,26 @@ public class Demo2 {
         Song s4 = new Song("Fourth", 1, "Fast", "none", "none");
         
          //(String name, int notes, String tempo, String words, String instrumentals)
-       //   Set<String> mySports = new HashSet<String>();
-          HashMap<Song> hasMap1 = new HashMap<Song>();
-        map.add(s1);
-        map.add(s2);
-        map.add(s3);
-        map.add(s4);
+          TreeSort<Song> treeSort1 = new TreeSort<Song>();
+          Set set = new HashSet();
+          
+          note use collections.sort
+          
+        set.add(s1);
+        set.add(s2);
+        set.add(s3);
+        set.add(s4);
         
         // same as below
-//        map.stream().forEach((song) -> {
+//        set.stream().forEach((song) -> {
 //            System.out.println(song);
 //        });
       
-        for(Object song : map) {
+        for(Object song : set) {
             System.out.println(song);
         }
         
+        System.out.println("song is :  " + s1.toString());
         
     }
     
